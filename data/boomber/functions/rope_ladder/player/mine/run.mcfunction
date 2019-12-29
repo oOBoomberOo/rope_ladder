@@ -1,0 +1,1 @@
+execute at @e[type=item, nbt={Item: {id: 'minecraft:ladder', Count: 1b}, Age: 0s}] if block ~ ~-1 ~ minecraft:ladder run function boomber:rope_ladder/player/mine/found

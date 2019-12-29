@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"ladder": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"item": "minecraft:ladder"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "boomber:rope_ladder/event/place_ladder"
+	}
+}

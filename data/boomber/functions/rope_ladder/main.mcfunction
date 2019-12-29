@@ -1,0 +1,1 @@
+execute as @a[tag=!global.ignore] at @s run function boomber:rope_ladder/player/main
