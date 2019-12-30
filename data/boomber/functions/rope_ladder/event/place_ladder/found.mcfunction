@@ -1,4 +1,5 @@
 execute store result score #bb.rl.ladder bb.variable run clear @s minecraft:ladder 0
+execute if entity @s[gamemode=creative] run scoreboard players set #bb.rl.ladder bb.variable 2147483647
 
 scoreboard players set #bb.rl.iteration bb.variable 0
 function boomber:rope_ladder/ladder/rope
