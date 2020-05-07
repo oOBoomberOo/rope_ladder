@@ -1,4 +1,4 @@
 clear @s minecraft:ladder 1
 
-scoreboard players remove #bb.rl.amount bb.variable 1
-execute if score #bb.rl.amount bb.variable matches 1.. run function boomber:rope_ladder/ladder/take
+scoreboard players remove #amount bb.rl.var 1
+execute if score #amount bb.rl.var matches 1.. run function boomber:rope_ladder/ladder/take

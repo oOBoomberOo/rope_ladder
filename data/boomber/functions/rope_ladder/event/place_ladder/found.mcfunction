@@ -1,11 +1,11 @@
-execute store result score #bb.rl.ladder bb.variable run clear @s minecraft:ladder 0
-execute if entity @s[gamemode=creative] run scoreboard players set #bb.rl.ladder bb.variable 2147483647
+execute store result score #ladder bb.rl.var run clear @s minecraft:ladder 0
+execute if entity @s[gamemode=creative] run scoreboard players set #ladder bb.rl.var 2147483647
 
-scoreboard players set #bb.rl.iteration bb.variable 0
+scoreboard players set #iteration bb.rl.var 0
 function boomber:rope_ladder/ladder/rope
 
-scoreboard players operation #bb.rl.amount bb.variable = #bb.rl.iteration bb.variable
-scoreboard players remove #bb.rl.amount bb.variable 1
+scoreboard players operation #amount bb.rl.var = #iteration bb.rl.var
+scoreboard players remove #amount bb.rl.var 1
 execute if entity @s[gamemode=!creative] run function boomber:rope_ladder/ladder/take
 
-scoreboard players set #bb.rl.raycast bb.success 1
+scoreboard players set #raycast bb.rl.var 1
